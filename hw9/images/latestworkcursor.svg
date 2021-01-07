@@ -1,0 +1,11 @@
+<svg id="latest_works" data-name="latest works" xmlns="http://www.w3.org/2000/svg" width="14" height="24" viewBox="0 0 14 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #2aacc8;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M7.75,13.556l4.364,9.062L9.106,23.977,4.635,14.692,0,19.18V0L14,13.556H7.75Z"/>
+</svg>

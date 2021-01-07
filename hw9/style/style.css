@@ -1,0 +1,590 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+@font-face {
+    font-family: 'Lato';
+    src: url(../fonts/Lato-Regular.ttf)
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+}
+
+.conteiner {
+    margin-right: auto;
+    margin-left: auto;
+/* указал padding общие что бы контент не упирался */
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.conteiner__size {
+    width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #e8ebf1;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    background-color: #e8ebf1;
+    width: 1000px;
+}
+
+.logo {
+    font-family: 'Lato';
+    font-weight: 900;
+    font-size: 50px;
+    text-decoration: none;
+    color: #000;
+}
+
+.logo__style {
+    font-family: 'Lato';
+    font-weight: 400;
+    color: #2aacc8;
+}
+
+.nav__box {
+    list-style-type: none;
+    font-size: 0;
+    margin-left: 210px;
+}
+
+.nav {
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 45px;
+}
+
+.nav__link {
+    color: #000;
+    font-size: 13px;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 700;
+}
+
+.nav__link:hover {
+    color: #2aacc8;
+}
+
+.arrow {
+    padding: 7px 3px;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-image: url(../images/down\ arrow.svg);
+}
+
+.arrow:hover {
+    color: #2aacc8;
+    background-color: #fff;
+    border-top: 4px solid #2aacc8;
+}
+
+.nav:last-child {
+    margin-right: 1px;
+}
+
+.img__nav {
+    margin-left: 4px;
+    position: absolute;
+}
+
+.sub__nav {
+    position: relative; 
+}
+
+.sub__conteiner {
+    position: absolute;
+    list-style-type: none;
+    width: 190px;
+    display: none;
+    left: 0;
+    top: 30px;   
+    border-bottom: 4px solid #2aacc8;
+}
+
+.sub__link {
+    display: inline-block;
+    font-size: 13px;
+    color: #000;
+    width: 100%;
+    background-color: #fff;
+    text-decoration: none;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    padding-left: 10px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.sub__link:hover {
+    color: #2aacc8;
+}
+
+.sub__nav:hover .sub__conteiner {
+    display: block;
+}
+
+.box__hero {
+    display: block;
+    width: 1400px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #81e4ed;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.hero {
+    width: 1000px;
+    height: 440px;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 90px;
+    padding-bottom: 110px;
+}
+
+.hero__title {
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff;
+    /* padding-top: 90px;
+    padding-bottom: 110px; */
+    margin-left: 55px;
+    margin-right: 645px;
+}
+
+.button__box {
+    display: block;
+    margin-top: 110px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+.button__hero {
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    height: 14px;
+    width: 14px;
+    background-color: #71a3a7;
+    border: none;
+    margin-right: 20px;
+}
+
+.button__hero:hover {
+    background-color: #fff;
+}
+
+.button__hero:last-child {
+    margin-right: 0px;
+}
+
+.box__products {
+    width: 1400px;
+    margin: 0 auto;
+    background-color: #e8ebf1;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+
+.products {
+    width: 1000px;
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.theme {
+    margin-right: 40px;
+}
+
+.theme::before {
+    content: url(../images/pen.png);
+    float: left;
+}
+
+.design {
+    margin-right: 40px;
+}
+
+.design::before {
+    content: url(../images/dekstop.png);
+    float: left;
+}
+
+.psd {
+    margin-right: 40px;
+}
+
+.psd::before {
+    content: url(../images/desk.png);
+    float: left;
+}
+
+.coding {
+    margin-right: 0px;
+}
+
+.coding::before {
+    content: url(../images/fly.png);
+    float: left;
+}
+
+.products__title {
+    font-size: 15px;
+    color: #000;
+    font-weight: 700;
+    padding-top: 15px;
+    padding-bottom: 30px;
+    margin-left: 60px;
+}
+
+.p__class {
+    font-size: 13px;
+    line-height: 20px;
+    color: #000;
+    clear: both;
+}
+
+.products__link {
+    display: inline-block;
+    font-size: 13px;
+    text-decoration: none;
+    color: #2aacc8;
+    padding-top: 25px;
+}
+
+.latest__work {
+    width: 1000px;
+    padding-top: 33px;
+    padding-bottom: 40px;
+}
+
+.latest__title {
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 10px;
+    margin-left: 30px;
+    margin-right: 785px;
+}
+
+.latest__box {
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.latest__box::before {
+    content: url(../images/s3kursor.png);
+    float: left;
+}
+
+.left__button {
+    margin-right: 10px;
+}
+
+.left__button ,.right__button  {
+    border: none;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #81e4ed;
+    position: relative;
+}
+
+.left__button::before {
+    content: url(../images/arrowl.png);
+}
+
+.right__button::before {
+    content: url(../images/arrowr.png);
+}
+
+.left__button:hover, .right__button:hover {
+    background: #e8ebf1;
+}
+
+.img__work {
+    border-top: 1px solid #dfe1e5;
+    padding-top: 20px;
+    font-size: 0;
+}
+
+.work__card {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+}
+
+.work__card:not(:last-child) {
+    margin-right: 36px;
+}
+
+.work__card:hover .cover {
+    opacity: 1;
+}
+
+.cover {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: #2aacc8;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.inner {
+    width: 90px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    margin: auto;
+    height: 25px;
+}
+
+.work__preview ,.work__share {
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+.work__preview {
+    background-image: url(../images/wind1.png);
+    width: 35px;
+    height: 25px;
+}
+
+.work__share {
+    background-image: url(../images/wind2.png);
+    width: 20px;
+    height: 25px;
+    margin-left: 35px;
+}
+
+.other {
+    padding-top: 20px;
+    border-top: 1px solid #dfe1e5;
+    width: 1000px;
+    display: flex;
+    padding-bottom: 42px;
+}
+
+.test {
+    width: 430px;
+}
+
+.test__title::before {
+    content: url(../images/s4commets.png);
+    margin-right: 15px;
+}
+
+.test__title, .clients__title {
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 5px;
+}
+
+.clients__title {
+    padding-bottom: 20px;
+}
+
+.test__text {
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.test__name {
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.test__link {
+    text-decoration: none;
+    color:black;
+}
+
+.test__link:hover {
+    color: #51b5ce;
+}
+
+.clients {
+    width: 482px;
+    margin-left: 95px;
+}
+
+.clients__title::before {
+    content: url(../images/s4clients.png);
+    margin-right: 15px;
+}
+
+.clients__box {
+    font-size: 0;
+    margin: 0;
+}
+
+.clients__link {
+    display: inline;
+}
+
+.client__link__right,.client__link__center,.client__link__left {
+    float: left;
+    width: 33%;
+}
+
+.download {
+    height: 140px;
+    width: 1000px;
+    background-color: #e8fcfe;
+    border: #81e4ed 1px solid;
+    margin-bottom: 40px;
+}
+
+.download__box {
+    display: block;   
+    padding: 31px 26px;
+}
+
+.download__text{
+    font-size: 16px;
+    line-height: 26px;
+    color: #363636;
+    margin-right: 80px;
+    float: left;
+    width: 610px;
+}
+/* Это очень кривое решение кнопки (( но час убил, и ::before пробовал */
+.dowload__button {
+    clear: both;
+    margin: 5px 0;
+    width: 240px;
+    height: 61px;
+    background-color: #7de1eb;
+    border: solid #2aacc8 1px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.download__button__icon {
+    margin-left: 18px;
+    height: 30px;
+    width:30px;
+    float: left;
+}
+
+.text__button {
+    margin-left: 70px;
+    margin-right: 20px;
+    padding-top: 7px;
+}
+
+.footer {
+    width: 1400px;
+    margin: 0 auto;
+    background-color: #e8ebf1;
+    border-top: 1px solid #d9d9d9;
+}
+
+.footer__box {
+    width: 1000px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.title__footer {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: bold;
+    text-transform:uppercase;
+}
+
+.title__footer__options {
+    padding-bottom: 26px;
+}
+
+.text__footer {
+    font-size: 14px;
+    color: #363636;
+}
+
+.about__us {
+    float: left;
+    width: 240px;
+    margin-right: 65px;
+}
+
+.explore {
+    float: left;
+    margin-right: 75px;
+}
+
+.browse {
+    float: left;
+    margin-right: 55px;
+}
+
+.contact_us {
+    float: left;
+    margin-right: 50px;
+}
+
+.nav__item {
+    list-style-type: none;
+    padding-top: 15px;
+}
+
+.footer__nav__link {
+    text-decoration: none;
+}
+
+.footer__nav__link:hover{
+    color: #7be0ea;
+}
+
+.box__conect {
+    margin-bottom: 12px;
+}
+
+.connect {
+    margin-right: 12px;
+}
+
+.connect:last-child{
+    margin-right: 0px;
+}
+
+.copy {
+    clear: both;
+    padding-top: 41px;
+}
+
+.text__copy {
+    float: left;
+    padding-top: 10px;
+    margin-right: 190px;
+    font-size: 13px;
+    line-height: 18px;
+}
+
