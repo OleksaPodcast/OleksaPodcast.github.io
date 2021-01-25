@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'Gotham Black Regular';
+    src: url("../../fonts/Gotham\ Black\ Regular.ttf");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+.hero {
+    background-color: #709dca;
+    width: 100%;
+    min-height: 590px;
+    display: flex;
+}
+
+.hero-box {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.hero-title{
+    font-family: 'Gotham Black Regular';
+    font-size: 35px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.hero-text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 35px;
+    color: #fff;
+}
+
+.input {
+    font-family: 'Open Sans', sans-serif;
+
+    &__form {
+        width: 280px;
+        height: 46px;
+        border-radius: 2px;
+        padding-left: 40px;
+        border: none;
+        font-size: 13px;
+        font-family: 'Open Sans', sans-serif;
+        background-repeat: no-repeat;
+        outline: none;
+        background-position: 15px;
+    }
+
+    &__form--user{
+        background-image: url('/img/siluet.png');
+    }
+
+    &__form--mail {
+        background-image: url('/img/postlatter.png')
+    }
+
+    &__form--phone {
+        background-image: url('/img/phonehero.png');
+    }
+
+    &__button {
+        width: 210px;
+        height: 46px;
+        font-family: 'Open Sans', sans-serif;
+        cursor: pointer;
+        background-color: #ffbb42;
+        color: #fff;
+        border: none;
+        font-size: 14px;
+        border-radius: 2px;
+        text-transform: uppercase;
+        &:hover {
+        outline: none;
+        color: #1ca8dd;
+          
+        }
+    }
+}
+
+//   оооочень криво 
+.hero--secondary--img { 
+    position: relative;
+    text-align: center;
+
+    &__laptop {
+        position: absolute;
+        z-index: 2;
+        left: 50%; 
+        top: 50%; 
+        width: 640px; 
+        height: 365px; 
+        margin-left: -320px;
+        margin-top: -290px;
+        z-index: 1;
+    }
+    &__screen {
+        position: absolute;
+        z-index: 2;
+        left: 50%; 
+        top: 50%; 
+        width: 440px; 
+        height: 265px; 
+        margin-left: -221px;
+        margin-top: -270px;
+    }
+}
+
+
+.laptop-button {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    text-align: center;
+
+    &__item {
+        border-radius: 50%;
+        background-color: #fff;
+        border: 2px solid #1ca8dd;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+    }
+
+    &__item:focus {
+        background-color:  #1ca8dd;
+        outline: none;
+    }
+
+    &__item:hover {
+        background-color: orangered;
+    }
+}
+
+

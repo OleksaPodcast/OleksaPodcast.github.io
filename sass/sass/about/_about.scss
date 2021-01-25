@@ -1,0 +1,59 @@
+.about {
+    background-color: #ffc155;
+    margin-top: 152px;
+    font-size: 0;
+}
+.about-box {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+    justify-content: center;
+    
+}
+
+.workshop-img {
+    width: 585px;
+    position: relative;
+    left: -260px;
+}
+
+.about-content {
+    display: block;
+    padding-top: 160px;
+    padding-bottom: 160px;
+    margin-left: 80px;
+    color: #fff;
+
+    &__title {
+        font-size: 30px;
+        font-family: 'Gotham Black Regular';
+        text-transform: uppercase;
+        padding-bottom: 22px;
+    }
+
+    &__text {
+        font-size: 13px;
+        line-height: 24px;
+        font-family:'Open Sans', sans-serif;
+        width: 505px;
+    }
+}
+
+.button--about {
+    margin-top: 35px;
+    width: 145px;
+    height: 45px;
+    border: 1px solid #e7ad48;
+    background-color: #ffc155;
+    color: #fff;
+}
+
+.button--about:hover {
+    cursor: pointer;
+    border: 1px solid #6a7f94;
+    color:  #6a7f94;
+}
+.button--about:focus {
+    outline: none;
+    background-color:  #e65f12;
+}

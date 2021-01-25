@@ -1,0 +1,84 @@
+.happy-clients {
+    padding-top: 135px;
+    padding-bottom: 160px;
+    background-color: #ffc155;
+}
+
+.clients-title {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    &__title {
+        font-size: 30px;
+        font-family: $gotem;
+    }
+    &__text {
+        font-family: $opensasn;
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 55px;
+    }
+}
+
+.review-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.review {
+    display: flex;
+    
+    align-items: flex-start;
+    background-color: #fff;
+    width: 566px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 25px;
+    padding-right: 30px;
+    margin-top: 20px;
+    justify-content: center;
+    
+
+}
+
+.review-content {
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    &__text {
+        display: flex;
+        font-family: $opensasn;
+        font-size: 13px;
+        line-height: 22px;
+        color: $textcolor;
+        text-align: left;
+        padding-bottom: 25px;
+    
+        &::before {
+            content:url('/img/qq.png');
+            float: left;
+            position: relative;
+            left: -10px;
+        }
+        &::after {
+            content:url('/img/qqdown.png');
+            left: -190px;
+            bottom: -100px;
+            position: relative;
+        }
+    }
+    &__card-name {
+        font-size: 14px;
+        line-height: 22px;
+        font-family: $lato;
+        color: #f6772c;
+        position: relative;
+        left: 10px;
+        text-transform: uppercase;
+    }
+    &__card-name--grey {
+        color: #99a9ae;
+    }
+
+}

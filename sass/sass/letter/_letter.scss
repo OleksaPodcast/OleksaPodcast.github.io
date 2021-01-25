@@ -1,0 +1,173 @@
+.news-letter {
+    padding-top: 160px;
+    padding-bottom: 45px;
+    width: 100%;
+}
+
+.letter-title {
+    color:#394b50;
+    text-align: center;
+    display: block;
+    &__title {
+        font-family: $gotem;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+    &__sub-title {
+        font-size: 16px;
+        font-family: $opensasn;
+        line-height: 22px;
+        padding-bottom: 40px;
+    }
+}
+
+
+
+
+.subscribe-box {
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 55px;
+
+    &__form {
+        height: 46px;
+        border-radius: 2px;
+        border: solid 1px #cbcbcb;
+        font-size: 13px;
+        font-family: 'Open Sans', sans-serif;
+        background-repeat: no-repeat;
+        outline: none;
+        background-position: 15px;
+        padding-left: 40px;
+    }
+
+    &__form--user{
+        background-image: url('/img/siluet.png');
+        width: 305px;
+    }
+
+    &__form--mail {
+        background-image: url('/img/postlatter.png');
+        width:385px;
+
+    }
+
+    &__button {
+        width: 220px;
+        font-family: $lato;
+        cursor: pointer;
+        background-color: #ffbb42;
+        color: #fff;
+        border: none;
+        font-size: 14px;
+        border-radius: 2px;
+        text-transform: uppercase;
+        height: 46px;
+        
+        &:hover {
+        outline: none;
+        color: #1ca8dd; 
+        }
+    }
+}
+
+.map-conteiner {
+    background-image: url('/img/map.png');
+    height: 550px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0 25px;
+}
+
+.map-conteiner {
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.adress {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-color: #394b50;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 0 75px;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 0;
+	    height: 0;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+    border-top: 10px solid  #394b50;;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -10px;
+    }
+
+    &__title {
+        font-family: $gotem;
+        padding-top: 58px;
+        color: #fff;
+        text-transform: uppercase;
+
+    }
+    &__contact {
+        padding-top: 18px;
+        font-family: $opensasn;
+        font-size: 13px;
+        line-height: 24px;
+        color: #aeb7ba;
+    }
+
+    &__info {
+        text-decoration: none;
+        color: #ffbb42;
+        &:hover {
+            color: #709dca;
+            cursor: pointer;
+        }
+    }
+}
+
+.logo {
+    padding-top: 25px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+}
+
+.nav-footer {
+    padding-top: 64px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #e3e7ec;
+
+}
+
+.phone-contant {
+    font-family: $lato;
+    color: #394b50;
+    font-size: 22px;
+    line-height: 24px;
+    text-align: center;
+    padding-top: 27px;
+    padding-bottom: 25px;
+    &::before {
+        content: url('/img/phone-contact.png');
+        margin-right: 10px;
+    }
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    &__link {
+        margin-left: 15px;
+    }
+}

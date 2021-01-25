@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+.services {
+    color: #394b50;
+    text-align: center;
+    
+    &__title {
+        font-size: 30px;
+        font-family: 'Gotham Black Regular';
+        text-transform: uppercase;
+        font-weight: 900;
+    }
+    &__secondary--title {
+        font-size: 16px;
+        line-height: 22px;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 700;
+    }
+}
+
+.proposition {
+    display: flex;
+    color: #7b7b7b;
+    flex-wrap:wrap;
+    justify-content: space-between;
+
+    &__box {
+        padding-top: 80px;
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__item {
+        margin-left: 35px;
+    }
+
+    &__label {
+        width: 410px;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        text-align: left;
+    }
+
+    &__text {
+        text-align: left;
+        font-size: 13px;
+        line-height: 22px;
+        font-family: 'Open Sans', sans-serif;
+        padding-top: 15px;
+        width: 410px;
+    }
+}
+
+

@@ -1,0 +1,25 @@
+ $textcolor: #7b7b7b;
+ $titlecolor: #394b50;
+ $gotem:  'Gotham Black Regular';
+ $opensasn:  'Open Sans', sans-serif;
+ $lato: 'Lato', sans-serif;
+ 
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body {
+     background-color: #fff;
+    
+ }
+
+ .conteiner {
+     width: 1170px;
+     margin: 0 auto;
+ }
+
+a {
+    text-decoration: none;
+}
